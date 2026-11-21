@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanisha Tripathi | Frontend Developer &amp; React UI Engineer</title>
+  <meta name="description" content="Portfolio of Tanisha Tripathi — Frontend Developer specializing in React.js, TypeScript, Tailwind CSS, Supabase, Groq AI integrations, and responsive UI/UX engineering. 3x Hackathon Winner." />
+  
+  <!-- Favicon / Vector Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2310b981'/><text x='50' y='65' font-size='48' font-family='sans-serif' font-weight='900' fill='%23090a0f' text-anchor='middle'>TT</text></svg>" />
+
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom Magnetic Cursor (Dymas Alfin Style) -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- Ambient Glow & Subtle Texture -->
+  <div class="ambient-glow">
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <!-- FLOATING NAVIGATION DOCK -->
+  <header class="header-wrapper">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Tanisha Tripathi Portfolio">
+        <div class="brand-badge">TT</div>
+        <div class="brand-info">
+          <span class="brand-name">Tanisha Tripathi</span>
+          <span class="brand-tag">Frontend Developer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Sound FX Toggle -->
+        <button id="soundToggleBtn" class="sound-toggle-btn" title="Toggle tactile audio feedback">
+          <span class="sound-wave-bars">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </span>
+          <span class="sound-label">SOUND: OFF</span>
+        </button>
+
+        <button class="btn-secondary open-resume-btn" title="View print-ready Curriculum Vitae">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Resume
+        </button>
+        <a href="#contact" class="btn-primary">
+          Let's Talk
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer">
+    <div class="mobile-nav-links">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#achievements" class="mobile-nav-link">Achievements</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <button class="btn-secondary open-resume-btn" style="width: 100%; margin-top: 10px;">View Full Resume</button>
+      <a href="#contact" class="btn-primary mobile-nav-link" style="width: 100%; justify-content: center; margin-top: 8px;">Let's Talk</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Column -->
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="pulse-beacon"></span>
+              <span>OPEN TO FRONTEND &amp; REACT DEVELOPER ROLES • 2024–PRESENT</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Tanisha Tripathi</span>.<br />
+              Frontend Developer Crafting High-Impact, User-Centric Web Interfaces.
+            </h1>
+
+            <p class="hero-bio">
+              Motivated and detail-oriented Frontend Developer with hands-on experience building responsive web applications 
+              and producing engaging digital content. Skilled in <strong>HTML, CSS, JavaScript, React.js, and TypeScript</strong>, 
+              with a strong grasp of modern web development practices, component-based architectures, and user-centric interfaces.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn-primary">
+                Explore Selected Works
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="7" x2="17" y2="17"/><polyline points="17 7 17 17 7 17"/></svg>
+              </a>
+              <button class="btn-secondary open-resume-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                View Full Resume
+              </button>
+            </div>
+
+            <!-- Quick Metrics Grid -->
+            <div class="hero-metrics-row">
+              <div class="metric-item">
+                <div class="metric-num">3<span>x</span></div>
+                <div class="metric-label">Hackathons Won</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">Top 50</div>
+                <div class="metric-label">of 500+ Teams</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">8.56</div>
+                <div class="metric-label">Latest SGPA (NIET)</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">100<span>%</span></div>
+                <div class="metric-label">Live App Deployed</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Card (User Portrait with 3D Tilt & Badges) -->
+          <div class="hero-visual-card" data-tilt>
+            
+            <!-- Floating Chip Top -->
+            <div class="floating-chip chip-top">
+              <div class="chip-icon gold">🏆</div>
+              <div>
+                <div class="chip-title">Top 50 of 500+ Teams</div>
+                <div class="chip-sub">Social Impact Platform Challenge</div>
+              </div>
+            </div>
+
+            <!-- Floating Chip Bottom -->
+            <div class="floating-chip chip-bottom">
+              <div class="chip-icon cyan">⚡</div>
+              <div>
+                <div class="chip-title">React &amp; TypeScript</div>
+                <div class="chip-sub">Tailwind CSS • Supabase • Groq AI</div>
+              </div>
+            </div>
+
+            <!-- Frame containing Tanisha's Portrait -->
+            <div class="portrait-frame">
+              <img src="assets/tanisha_photo.jpg" alt="Tanisha Tripathi - Frontend Developer" class="portrait-img" />
+              <div class="portrait-gradient-overlay"></div>
+              <div class="portrait-caption">
+                <div>
+                  <h3 class="caption-name">Tanisha Tripathi</h3>
+                  <div class="caption-role">Frontend Developer • NIET Greater Noida, U.P.</div>
+                </div>
+                <div style="background: rgba(16, 185, 129, 0.2); border: 1px solid #10b981; border-radius: 9999px; padding: 4px 10px; font-size: 11px; color: #34d399; font-weight: 700; font-family: var(--font-mono);">
+                  AVAILABLE
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INFINITE TECH MARQUEE (Dymas Alfin Style) -->
+    <div class="marquee-container" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item"><span class="sparkle">✦</span> REACT.JS &amp; TYPESCRIPT</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> TAILWIND CSS &amp; UI/UX</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> 3X HACKATHON WINNER</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> SUPABASE &amp; POSTGRESQL RLS</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> GROQ API &amp; AI HEALTH TRANSLATOR</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> LEAFLET &amp; OPENSTREETMAP APIS</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> VITEST UNIT TESTING SUITES</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> COMPONENT-BASED ARCHITECTURE</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> FRONTEND DEVELOPER @ LEARNGECKO</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> CONTENT WRITER @ ASHNA AI</div>
+        
+        <!-- Duplicate for Seamless Infinite Scrolling -->
+        <div class="marquee-item"><span class="sparkle">✦</span> REACT.JS &amp; TYPESCRIPT</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> TAILWIND CSS &amp; UI/UX</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> 3X HACKATHON WINNER</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> SUPABASE &amp; POSTGRESQL RLS</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> GROQ API &amp; AI HEALTH TRANSLATOR</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> LEAFLET &amp; OPENSTREETMAP APIS</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> VITEST UNIT TESTING SUITES</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> COMPONENT-BASED ARCHITECTURE</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> FRONTEND DEVELOPER @ LEARNGECKO</div>
+        <div class="marquee-item"><span class="sparkle">✦</span> CONTENT WRITER @ ASHNA AI</div>
+      </div>
+    </div>
+
+    <!-- ABOUT & PHILOSOPHY SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Engineering Philosophy &amp; Background</span>
+        </div>
+
+        <h2 class="section-title">Merging Intuitive Interface Design with Robust Frontend Engineering</h2>
+        <p class="section-desc">
+          I craft user-centric, accessible, and high-performance web applications, translating complex logic and data schemas into seamless responsive experiences.
+        </p>
+
+        <div class="about-grid">
+          
+          <!-- Editorial Statement Box -->
+          <div class="about-statement">
+            <div>
+              <div class="quote-highlight">
+                "Writing code where <span>visual elegance</span>, <span>strict responsiveness</span>, and <span>bulletproof reliability</span> align seamlessly."
+              </div>
+              <p class="about-narrative">
+                Currently pursuing an <strong>Integrated B.Tech + M.Tech</strong> at Noida Institute of Engineering and Technology (NIET, Greater Noida) with an academic CGPA of <strong>8.10 (Latest SGPA: 8.56)</strong>. 
+                My development workflow centers around building accessible, modular frontend components with modern JavaScript/TypeScript, React.js, and utility-first styling.
+              </p>
+              <p class="about-narrative">
+                Whether converting complex UI/UX designs into reusable components at <strong>LearnGecko</strong>, researching cutting-edge AI breakthroughs at <strong>Ashna AI</strong>, or engineering production-deployed applications like <strong>Belluna</strong>, I thrive at delivering seamless user journeys.
+              </p>
+            </div>
+
+            <!-- Education Card -->
+            <div class="education-card">
+              <div class="edu-header">
+                <span class="edu-school">NIET, Greater Noida</span>
+                <span class="edu-year">2024 – Present</span>
+              </div>
+              <div class="edu-degree">
+                Integrated B.Tech + M.Tech • Greater Noida, U.P.
+              </div>
+              <div style="margin-top: 8px; font-size: 13px;">
+                Academic Standing: <span class="edu-cgpa">CGPA 8.10 | Latest SGPA: 8.56</span>
+              </div>
+              <div style="margin-top: 10px; font-size: 12.5px; color: var(--text-muted); border-top: 1px solid rgba(255, 255, 255, 0.06); padding-top: 8px;">
+                • Rani Laxmi Bai Memorial School — Class XII (CBSE): <strong>81%</strong><br />
+                • Rani Laxmi Bai Memorial School — Class X (CBSE): <strong>84%</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Core Pillars List -->
+          <div class="pillars-list">
+            
+            <div class="pillar-card">
+              <span class="pillar-number">01</span>
+              <div>
+                <h3 class="pillar-title">Component-Based Frontend Architecture</h3>
+                <p class="pillar-desc">
+                  Building modular, maintainable, and type-safe component hierarchies in React.js and TypeScript. Authoring clean interfaces with strict props validation and zero unnecessary re-renders.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <span class="pillar-number">02</span>
+              <div>
+                <h3 class="pillar-title">Responsive &amp; Cross-Breakpoint Optimization</h3>
+                <p class="pillar-desc">
+                  Executing mobile-first design systems across desktop (1440px+), tablet (768px), and mobile (375px) breakpoints with Tailwind CSS, ensuring smooth rendering loops and zero Cumulative Layout Shift (CLS).
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <span class="pillar-number">03</span>
+              <div>
+                <h3 class="pillar-title">AI &amp; Full-Stack API Integration</h3>
+                <p class="pillar-desc">
+                  Wiring frontend clients to Supabase PostgreSQL with Row Level Security (RLS) and connecting LLMs via Groq API with Zod structured output schemas and multilingual translation enforcement.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <span class="pillar-number">04</span>
+              <div>
+                <h3 class="pillar-title">Testing, Debugging &amp; Performance Tuning</h3>
+                <p class="pillar-desc">
+                  Wrote Vitest unit test suites across core application modules, executed hands-on cross-browser testing across modern engines, and optimized frontend asset delivery for high responsiveness.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SELECTED WORKS / PROJECTS SECTION -->
+    <section id="projects" class="section" style="background: rgba(15, 17, 24, 0.4);">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Featured Portfolio</span>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 24px;">
+          <div>
+            <h2 class="section-title" style="margin-bottom: 8px;">Selected Works &amp; Systems</h2>
+            <p class="section-desc" style="margin-bottom: 0;">
+              Production web applications, accessible healthcare platforms, and component libraries crafted with modern web standards.
+            </p>
+          </div>
+
+          <!-- Filter Pills -->
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="featured">Featured Web Apps</button>
+            <button class="filter-btn" data-filter="ai">AI &amp; Full-Stack</button>
+            <button class="filter-btn" data-filter="uiux">UI/UX &amp; Systems</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Belluna -->
+          <article class="project-card" data-category="featured ai" data-tilt>
+            <div class="project-media">
+              <div class="project-svg-wrap">
+                <img src="assets/belluna.svg" alt="Belluna Women's Health Web App Mockup" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <span class="project-badge-float" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border-color: #10b981;">LIVE PRODUCTION • GROQ AI</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">PostgreSQL RLS</span>
+                <span class="tech-tag">Groq API</span>
+                <span class="tech-tag">Leaflet</span>
+                <span class="tech-tag">Vitest</span>
+              </div>
+
+              <h3 class="project-title">Belluna | Bilingual (English/Hindi) Women’s Health Web App</h3>
+              <p class="project-desc">
+                A bilingual (English/Hindi) women’s health web app built using React, TypeScript, Tailwind CSS, and Supabase. Enables private cycle and symptom tracking, emergency triage, and real-time anonymous peer support.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Safety-screened AI health translator powered by Groq API with Zod structured output and Hinglish/Hindi enforcement.</li>
+                <li>Secured confidential health records via PostgreSQL Row Level Security (RLS) so each user can access only their own data.</li>
+                <li>Interactive Leaflet + OpenStreetMap (Overpass API) clinic finder to locate nearby verified medical facilities.</li>
+                <li>Comprehensive Vitest unit test suites across core prediction and computation modules.</li>
+              </ul>
+
+              <div class="project-actions">
+                <button class="btn-deepdive" data-project="belluna">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  Architecture Breakdown
+                </button>
+                <div style="display: flex; gap: 8px;">
+                  <a href="https://github.com/TanishaTripathi15" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Code on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="#" class="btn-icon" title="Live Production Demo">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: SilentHelp -->
+          <article class="project-card" data-category="featured ai" data-tilt>
+            <div class="project-media">
+              <div class="project-svg-wrap">
+                <img src="assets/silenthelp.svg" alt="SilentHelp Platform Mockup" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <span class="project-badge-float" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; border-color: #38bdf8;">AI CONVERSATIONAL UI</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Conversational AI</span>
+                <span class="tech-tag">Mobile-First</span>
+              </div>
+
+              <h3 class="project-title">SilentHelp | AI-Powered Mental Health Support Platform</h3>
+              <p class="project-desc">
+                A mental-health assistance platform integrating AI-based conversational support for users seeking guidance during stress, burnout, and distress.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Designed an intuitive, responsive interface focused on accessibility, emotional comfort, and calm visual hierarchy.</li>
+                <li>Implemented frontend components and explored AI conversational support patterns for guided 4-4-4 breathing exercises.</li>
+                <li>Engineered mobile-first layouts with zero tracking scripts and confidential client-side state isolation.</li>
+              </ul>
+
+              <div class="project-actions">
+                <button class="btn-deepdive" data-project="silenthelp">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  Architecture Breakdown
+                </button>
+                <div style="display: flex; gap: 8px;">
+                  <a href="https://github.com/TanishaTripathi15" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Code on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: CrowdCare -->
+          <article class="project-card" data-category="featured uiux" data-tilt>
+            <div class="project-media">
+              <div class="project-svg-wrap">
+                <img src="assets/crowdcare.svg" alt="CrowdCare Emergency Dispatch Platform Mockup" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <span class="project-badge-float" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: #f59e0b;">🏆 TOP 50 / 500+ TEAMS</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Geospatial Routing</span>
+                <span class="tech-tag">Leaflet</span>
+                <span class="tech-tag">Socket.IO</span>
+                <span class="tech-tag">Emergency Triage</span>
+              </div>
+
+              <h3 class="project-title">CrowdCare | Community Emergency Dispatch &amp; Social Impact Network</h3>
+              <p class="project-desc">
+                An emergency dispatch and civic support network engineered to connect victims, nearby volunteers, and hospitals during urgent crises. Top 50 of 500+ teams in the Social Impact Platform Challenge.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Won 3 hackathons and reached the finals in 2 with real-time geospatial emergency dispatching.</li>
+                <li>Real-time incident broadcasts with GPS coordinates and volunteer response radius tracking.</li>
+                <li>Hospital bed availability, blood bank directory, and bilingual alert notifications.</li>
+              </ul>
+
+              <div class="project-actions">
+                <button class="btn-deepdive" data-project="crowdcare">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  Architecture Breakdown
+                </button>
+                <div style="display: flex; gap: 8px;">
+                  <a href="https://github.com/TanishaTripathi15" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Code on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: LearnGecko UI Component System -->
+          <article class="project-card" data-category="uiux" data-tilt>
+            <div class="project-media">
+              <div class="project-svg-wrap">
+                <img src="assets/learngecko.svg" alt="LearnGecko Component Library Mockup" style="width: 100%; height: 100%; object-fit: cover;" />
+              </div>
+              <span class="project-badge-float" style="background: rgba(168, 85, 247, 0.2); color: #c084fc; border-color: #a855f7;">PRODUCTION SYSTEM</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">HTML5 &amp; CSS3</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Breakpoint Tuning</span>
+              </div>
+
+              <h3 class="project-title">LearnGecko UI Component System &amp; Breakpoint Optimization</h3>
+              <p class="project-desc">
+                Production-grade design system and responsive frontend component library engineered for LearnGecko's web interfaces, converting Figma UI/UX designs into modular building blocks.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Converted complex UI/UX designs into reusable, responsive React frontend components.</li>
+                <li>Systematic breakpoint tuning ensuring pixel-perfect alignment across desktop, tablet, and mobile viewports.</li>
+                <li>Hands-on debugging and testing, eliminating layout shifts (CLS &lt; 0.01) and improving site responsiveness.</li>
+              </ul>
+
+              <div class="project-actions">
+                <button class="btn-deepdive" data-project="learngecko">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  Architecture Breakdown
+                </button>
+                <div style="display: flex; gap: 8px;">
+                  <a href="https://github.com/TanishaTripathi15" target="_blank" rel="noopener noreferrer" class="btn-icon" title="View Code on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & INTERNSHIPS SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Career Milestones</span>
+        </div>
+
+        <h2 class="section-title">Work Experience &amp; Contributions</h2>
+        <p class="section-desc">
+          Professional industry contributions in frontend engineering, responsive UI component design, and technical AI research.
+        </p>
+
+        <div class="timeline-list">
+          
+          <!-- Experience 1: LearnGecko -->
+          <div class="timeline-card">
+            <div class="timeline-company-block">
+              <h3 class="company-name">LearnGecko</h3>
+              <div class="timeline-period">Feb 2026 – Present</div>
+              <div class="timeline-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                Frontend Engineering
+              </div>
+            </div>
+
+            <div class="timeline-details">
+              <div class="role-title">Frontend Developer</div>
+              <ul class="bullet-points">
+                <li>
+                  Developed and maintained responsive web interfaces using <strong>HTML, CSS, JavaScript, and modern React</strong>.
+                </li>
+                <li>
+                  Converted complex UI/UX designs into <strong>reusable, modular, and responsive frontend components</strong>.
+                </li>
+                <li>
+                  Collaborated with the cross-functional development team to <strong>ship user-friendly features</strong> and improve core site performance.
+                </li>
+                <li>
+                  Optimized layouts and micro-interactions across <strong>desktop, tablet, and mobile breakpoints</strong> with zero layout shifts.
+                </li>
+                <li>
+                  Participated actively in <strong>debugging, testing, and enhancing application functionality</strong> across browsers.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2: Ashna AI -->
+          <div class="timeline-card">
+            <div class="timeline-company-block">
+              <h3 class="company-name">Ashna AI</h3>
+              <div class="timeline-period">Jul 2025 – Present</div>
+              <div class="timeline-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+                Technical Content &amp; AI Research
+              </div>
+            </div>
+
+            <div class="timeline-details">
+              <div class="role-title">Content Writer &amp; AI Researcher</div>
+              <ul class="bullet-points">
+                <li>
+                  Created high-impact, engaging content for <strong>blogs, articles, and digital social media channels</strong>.
+                </li>
+                <li>
+                  Researched <strong>AI models and emerging-technology topics</strong> to produce well-structured, authoritative technical pieces.
+                </li>
+                <li>
+                  Communicated complex technical capabilities into clear, user-centric narratives for developers and enterprise clients.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL ARSENAL / SKILLS SECTION -->
+    <section id="skills" class="section" style="background: rgba(15, 17, 24, 0.4);">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Technical Stack</span>
+        </div>
+
+        <h2 class="section-title">Skills &amp; Technical Capabilities</h2>
+        <p class="section-desc">
+          Modern frontend web development stack coupled with backend authentication, AI APIs, testing suites, and dev tools.
+        </p>
+
+        <div class="skills-matrix">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-wrap">&lt;/&gt;</div>
+              <h3 class="cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">Modern CSS3</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend & UI/UX -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-wrap">⚡</div>
+              <h3 class="cat-title">Frontend Frameworks &amp; Styling</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">Tailwind CSS</span>
+              <span class="skill-pill">Responsive Web Design</span>
+              <span class="skill-pill">Component-Based Design</span>
+              <span class="skill-pill">UI/UX Fundamentals</span>
+              <span class="skill-pill">Breakpoint Optimization</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend & Data -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-wrap">🗄️</div>
+              <h3 class="cat-title">Backend, Data &amp; AI</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-pill">Supabase</span>
+              <span class="skill-pill">PostgreSQL (Row Level Security - RLS)</span>
+              <span class="skill-pill">Groq API</span>
+              <span class="skill-pill">Zod Validation</span>
+              <span class="skill-pill">RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Testing -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-wrap">🛠️</div>
+              <h3 class="cat-title">Tools &amp; Testing Suites</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Vitest (Unit Testing)</span>
+              <span class="skill-pill">Leaflet</span>
+              <span class="skill-pill">OpenStreetMap (Overpass API)</span>
+            </div>
+          </div>
+
+          <!-- Category 5: Core Engineering Skills -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-wrap">🧠</div>
+              <h3 class="cat-title">Core Engineering Practices</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-pill">Component Reusability</span>
+              <span class="skill-pill">Cross-Browser Optimization</span>
+              <span class="skill-pill">Debugging &amp; Profiling</span>
+              <span class="skill-pill">Unit Testing Suites</span>
+              <span class="skill-pill">Technical Research</span>
+              <span class="skill-pill">Content Writing</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Spoken Languages -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon-wrap">🌐</div>
+              <h3 class="cat-title">Languages Spoken</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-pill">English (Professional)</span>
+              <span class="skill-pill">Hindi (Native)</span>
+              <span class="skill-pill">German (Beginner)</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & RECOGNITION -->
+    <section id="achievements" class="section">
+      <div class="container">
+        
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Recognition &amp; Honors</span>
+        </div>
+
+        <h2 class="section-title">Achievements &amp; Milestones</h2>
+        <p class="section-desc">
+          Competitive hackathon victories, academic honors, and production deployment milestones.
+        </p>
+
+        <div class="achievements-grid">
+          
+          <div class="achievement-card">
+            <div class="trophy-badge">🏆</div>
+            <h3 class="achieve-title">3x Hackathon Winner</h3>
+            <p class="achieve-desc">
+              Won 3 hackathons and reached the finals in 2. Placed in the <strong>Top 50 of 500+ teams</strong> nationally with <strong>CrowdCare</strong> in the Social Impact Platform Challenge, showcasing rapid prototype execution under intense constraints.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="trophy-badge green">🎓</div>
+            <h3 class="achieve-title">Academic Excellence (8.56 SGPA)</h3>
+            <p class="achieve-desc">
+              Maintaining an overall <strong>CGPA of 8.10</strong> with a latest <strong>SGPA of 8.56</strong> in the rigorous Integrated B.Tech + M.Tech programme at Noida Institute of Engineering and Technology (NIET).
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="trophy-badge cyan">🚀</div>
+            <h3 class="achieve-title">Live Production Deployment</h3>
+            <p class="achieve-desc">
+              Architected, implemented, and deployed <strong>Belluna</strong> as a publicly accessible full-stack web application with Supabase PostgreSQL RLS, Leaflet geospatial mapping, and Groq API multilingual health translations.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & COLLABORATION SECTION (EDITORIAL DOCK) -->
+    <section id="contact" class="section">
+      <div class="container">
+        
+        <div class="contact-container">
+          <div class="contact-grid">
+            
+            <!-- Left Info -->
+            <div>
+              <div class="section-tag">
+                <span class="dot"></span>
+                <span>Get in Touch</span>
+              </div>
+
+              <h2 class="contact-title">Let's Build Something Exceptional Together.</h2>
+              <p class="contact-text">
+                I am actively seeking Frontend Developer, React Engineer, and UI/UX opportunities. 
+                Whether you have an ambitious product to ship, an internship opening, or want to collaborate on user-centric web applications, my inbox is always open!
+              </p>
+
+              <!-- Direct Copy Pills -->
+              <div class="contact-direct-items">
+                
+                <button class="contact-pill-btn" id="copyEmailBtn" title="Click to copy email address">
+                  <div class="pill-info">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <div>
+                      <div class="pill-label">Email Address</div>
+                      <div class="pill-val">tanishatrip2015@gmail.com</div>
+                    </div>
+                  </div>
+                  <span class="copy-badge">Click to Copy</span>
+                </button>
+
+                <button class="contact-pill-btn" id="copyPhoneBtn" title="Click to copy phone number">
+                  <div class="pill-info">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <div>
+                      <div class="pill-label">Phone &amp; WhatsApp</div>
+                      <div class="pill-val">+91 88829 47997</div>
+                    </div>
+                  </div>
+                  <span class="copy-badge">Click to Copy</span>
+                </button>
+
+              </div>
+
+              <!-- Location & Real-time IST Clock -->
+              <div class="location-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Based in Greater Noida, U.P., India • Local Time: <span id="liveClock" class="clock">--:--:-- IST</span></span>
+              </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="contact-form-wrap">
+              <form id="contactForm">
+                <div class="form-group">
+                  <label class="form-label" for="senderName">YOUR NAME</label>
+                  <input type="text" id="senderName" class="form-input" placeholder="e.g. Alex Mercer" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="senderEmail">EMAIL ADDRESS</label>
+                  <input type="email" id="senderEmail" class="form-input" placeholder="alex@company.com" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="senderSubject">SUBJECT</label>
+                  <input type="text" id="senderSubject" class="form-input" placeholder="Frontend Opportunity / Collaboration / Inquiry" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="senderMessage">MESSAGE</label>
+                  <textarea id="senderMessage" class="form-textarea" placeholder="Tell me about your product, frontend requirements, or role..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                  <span>Send Message to Tanisha</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </form>
+            </div>
+
+          </div>
+
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div>
+              © 2026 Tanisha Tripathi • Engineered with Clean Code &amp; Precision.
+            </div>
+            <div class="footer-socials">
+              <a href="https://github.com/TanishaTripathi15" target="_blank" rel="noopener noreferrer" class="footer-social-link">GitHub</a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link">LinkedIn</a>
+              <a href="mailto:tanishatrip2015@gmail.com" class="footer-social-link">Email</a>
+              <a href="tel:+918882947997" class="footer-social-link">+91 88829 47997</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL 1: PROJECT DEEP DIVE MODAL -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalProjectTitle">Project Architecture Breakdown</h3>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalProjectBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: INTERACTIVE PRINT-READY RESUME VIEWER -->
+  <div class="modal-overlay" id="resumeModal">
+    <div class="modal-content" style="max-width: 860px;">
+      <div class="modal-header">
+        <h3 class="modal-title">Tanisha Tripathi — Curriculum Vitae</h3>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <button id="printResumeBtn" class="btn-primary" style="padding: 7px 16px; font-size: 12.5px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Print / Save PDF
+          </button>
+          <button class="modal-close-btn" id="resumeCloseBtn">&times;</button>
+        </div>
+      </div>
+      
+      <div class="modal-body" style="padding: 24px; background: #0b0e14;">
+        <div class="resume-sheet">
+          <h1>TANISHA TRIPATHI</h1>
+          <div class="res-contact">
+            📞 +91 88829 47997 &nbsp;|&nbsp; 
+            ✉️ tanishatrip2015@gmail.com &nbsp;|&nbsp; 
+            🌐 LinkedIn &nbsp;|&nbsp; 
+            🌐 GitHub: TanishaTripathi15 &nbsp;|&nbsp; 
+            📍 Greater Noida, U.P., India
+          </div>
+
+          <h2>Professional Summary</h2>
+          <p>
+            Motivated and detail-oriented Frontend Developer with hands-on experience building responsive web applications and producing engaging digital content. Skilled in HTML, CSS, JavaScript, React.js and TypeScript, with a strong grasp of modern web development practices. Passionate about crafting user-centric interfaces and continuously learning new technologies.
+          </p>
+
+          <h2>Education</h2>
+          <p>
+            <strong>NIET, Greater Noida</strong>, Greater Noida, U.P.<br />
+            Integrated B.Tech + M.Tech | <strong>CGPA: 8.10 | Latest SGPA: 8.56</strong> | 2024 – Present<br />
+            <strong>Rani Laxmi Bai Memorial School</strong> — Class XII (CBSE) | Score: <strong>81%</strong><br />
+            <strong>Rani Laxmi Bai Memorial School</strong> — Class X (CBSE) | Score: <strong>84%</strong>
+          </p>
+
+          <h2>Experience</h2>
+          <p><strong>LearnGecko</strong> — Frontend Developer (Feb 2026 – Present)</p>
+          <ul>
+            <li>Developed and maintained responsive web interfaces using HTML, CSS and JavaScript.</li>
+            <li>Converted UI/UX designs into reusable, responsive frontend components.</li>
+            <li>Collaborated with the development team to ship user-friendly features and improve site performance.</li>
+            <li>Optimized layouts and interactions across desktop, tablet and mobile breakpoints.</li>
+            <li>Participated in debugging, testing and enhancing application functionality.</li>
+          </ul>
+
+          <p><strong>Ashna AI</strong> — Content Writer (Jul 2025 – Present)</p>
+          <ul>
+            <li>Created engaging content for blogs, articles and social media channels.</li>
+            <li>Researched AI and emerging-technology topics to produce high-quality, well-structured pieces.</li>
+          </ul>
+
+          <h2>Key Projects</h2>
+          <p><strong>Belluna | Bilingual (English/Hindi) Women’s Health Web App</strong> (React, TypeScript, Tailwind CSS, Supabase, PostgreSQL, Groq API, Leaflet)</p>
+          <ul>
+            <li>Built a bilingual (English/Hindi) women’s health web app using React, TypeScript, Tailwind CSS and Supabase, enabling private cycle/symptom tracking, emergency triage and real-time anonymous peer support.</li>
+            <li>Implemented a safety-screened AI health translator powered by the Groq API with Zod structured-output validation, Hinglish/Hindi language enforcement, curated source mapping and retry/timeout resilience.</li>
+            <li>Secured user health data via PostgreSQL Row Level Security (RLS) so each user can access only their own records.</li>
+            <li>Built an interactive Leaflet + OpenStreetMap (Overpass API) clinic finder to locate nearby healthcare facilities.</li>
+            <li>Wrote Vitest unit test suites across core modules to keep features reliable as the app grew.</li>
+          </ul>
+
+          <p><strong>SilentHelp | AI-Powered Mental Health Support Platform</strong> (React, JavaScript, HTML, CSS)</p>
+          <ul>
+            <li>Built a mental-health assistance platform integrating AI-based support features for users seeking guidance.</li>
+            <li>Designed an intuitive, responsive interface focused on accessibility and emotional comfort, with clear navigation, calm visual hierarchy and a mobile-first layout.</li>
+            <li>Implemented frontend components and explored AI-integration patterns for conversational support.</li>
+          </ul>
+
+          <p><strong>CrowdCare | Community Social Impact &amp; Emergency Platform</strong> (React, Leaflet, Real-Time Emergency Routing)</p>
+          <ul>
+            <li>Emergency incident dispatching and volunteer coordination network.</li>
+            <li>Won 3 hackathons and reached finals in 2; Top 50 of 500+ teams in the Social Impact Platform Challenge.</li>
+          </ul>
+
+          <h2>Technical Skills</h2>
+          <p>
+            <strong>Languages:</strong> JavaScript (ES6+), TypeScript, HTML5, CSS3<br />
+            <strong>Frontend:</strong> React.js, Tailwind CSS, Responsive Web Design, UI/UX Fundamentals<br />
+            <strong>Backend &amp; Data:</strong> Supabase, PostgreSQL (Row Level Security), Groq API, Zod<br />
+            <strong>Tools:</strong> Git, GitHub, VS Code, Vitest, Leaflet, OpenStreetMap (Overpass API)<br />
+            <strong>Core Skills:</strong> Component-Based Design, Cross-Browser &amp; Breakpoint Optimization, Debugging, Unit Testing, Content Writing, Technical Research<br />
+            <strong>Languages Spoken:</strong> English (Professional), Hindi (Native), German (Beginner)
+          </p>
+
+          <h2>Achievements</h2>
+          <ul>
+            <li><strong>Hackathons:</strong> Won 3 hackathons and reached the finals in 2; top 50 of 500+ teams with CrowdCare (Social Impact Platform Challenge).</li>
+            <li><strong>Academics:</strong> Maintaining a CGPA of 8.10 (latest SGPA 8.56) in the Integrated B.Tech + M.Tech programme at NIET.</li>
+            <li><strong>Live Project:</strong> Deployed Belluna as a live, publicly accessible full-stack web app.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notice" id="globalToast"></div>
+
+  <!-- Interaction Engine Script -->
+  <script src="script.js"></script>
+</body>
+</html>
